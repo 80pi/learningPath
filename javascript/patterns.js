@@ -11,6 +11,7 @@
 const prompt = require("prompt-sync")();
 // -------------------------------------
 //  print star in nxn matrix
+// method 1
 // var number = prompt("enter number ");
 // for (let i = 0; i < number; i++) {
 //   let pattern = "";
@@ -18,6 +19,10 @@ const prompt = require("prompt-sync")();
 //     pattern += "*";
 //   }
 //   console.log(pattern);
+// }
+// method 2
+// for (let i = 0; i < number; i++) {
+//   console.log("*".repeat(number));
 // }
 // output
 // ****
@@ -35,7 +40,10 @@ const prompt = require("prompt-sync")();
 //   }
 //   console.log(str);
 // }
-
+// method 2
+// for (let i = 1; i <= number; i++) {
+//   console.log(i.toString().repeat(number));
+// }
 // output
 // 1111
 // 2222
@@ -82,6 +90,7 @@ const prompt = require("prompt-sync")();
 // 13 14 15 16
 // --------------------------------
 // print right angle triangle with stars
+// method 1
 // var num = prompt("n ");
 // for (let i = 0; i < num; i++) {
 //   let str = "";
@@ -89,6 +98,10 @@ const prompt = require("prompt-sync")();
 //     str += "x" + " ";
 //   }
 //   console.log(str);
+// }
+// method 2
+// for (let i = 1; i <= num; i++) {
+//   console.log("X ".repeat(i));
 // }
 
 // // op
@@ -170,6 +183,7 @@ const prompt = require("prompt-sync")();
 // print alpha with nxn in which column need to increase
 // var num = prompt("n ");
 // let alp = 65;
+// method 1
 // for (let i = 1; i <= num; i++) {
 //   let str = "";
 //   for (let j = 0; j < num; j++) {
@@ -178,8 +192,221 @@ const prompt = require("prompt-sync")();
 //   console.log(str);
 //   alp++;
 // }
+// method 2
+// for (let i = 0; i < num; i++) {
+//   console.log((String.fromCharCode(alp) + " ").repeat(num));
+//   alp++;
+// }
 // op
 // n 3
 // A A A
 // B B B
 // C C C
+// ----------------------------
+// print sequence of abc in nxn matrix
+// var num = prompt("enter num: ");
+// for (let i = 1; i <= num; i++) {
+//   let alp = 65;
+//   let str = "";
+//   for (let j = 0; j < num; j++) {
+//     str += String.fromCharCode(alp) + " ";
+//     alp++;
+//   }
+//   console.log(str);
+// }
+// op
+// enter num: 3
+// A B C
+// A B C
+// A B C
+// --------------------------
+// print sequence in nxn mztrix
+// var num = prompt("enter num: ");
+// let alp = 65;
+// for (let i = 1; i <= num; i++) {
+//   let str = "";
+//   for (let j = 0; j < num; j++) {
+//     str += String.fromCharCode(alp) + " ";
+//     alp++;
+//   }
+//   console.log(str);
+// }
+// op
+// enter num: 3
+// A B C
+// D E F
+// G H I
+// ---------------------
+// print sequence but it need to start from next alp on next line
+// var num = prompt("enter num: ");
+// let alp = 65;
+// for (let i = 0; i < num; i++) {
+//   let str = "";
+//   let nextAlp = alp + i;
+//   for (let j = 0; j < num; j++) {
+//     str += String.fromCharCode(nextAlp) + " ";
+//     nextAlp++;
+//   }
+//   console.log(str);
+// }
+// // op
+// enter num: 3
+// A B C
+// B C D
+// C D E
+// ---------------------
+// right angle tri with alpha in next order
+// var num = prompt("enter num: ");
+// let alp = 65;
+// for (let i = 0; i < num; i++) {
+//   let str = "";
+//   for (let j = 0; j <= i; j++) {
+//     str += String.fromCharCode(alp) + " ";
+//   }
+//   alp++;
+//   console.log(str);
+// }
+// enter num: 3
+// A
+// B B
+// C C C
+// ---------------------
+// same right angle tri but in increasing order
+// var num = prompt("enter num: ");
+// let alp = 65;
+// for (let i = 0; i < num; i++) {
+//   let str = "";
+//   for (let j = 0; j <= i; j++) {
+//     str += String.fromCharCode(alp) + " ";
+//     alp++;
+//   }
+//   console.log(str);
+// }
+// op
+// enter num: 4
+// A
+// B C
+// D E F
+// G H I J
+// ---------------------
+// print sequence but it need to start from next alp on next line in right ang tri
+// var num = prompt("enter num: ");
+// let alp = 65;
+// for (let i = 0; i < num; i++) {
+//   let str = "";
+//   let nextAlp = alp + i;
+//   for (let j = 0; j <= i; j++) {
+//     str += String.fromCharCode(nextAlp) + " ";
+//     nextAlp++;
+//   }
+//   console.log(str);
+// }
+// op
+// enter num: 4
+// A
+// B C
+// C D E
+// D E F G
+// ---------------------
+// print sequence but it need to start from next alp on next line in right ang tri but in reverse order
+// var num = prompt("enter num: ");
+// let alp = 64 + parseInt(num);
+// for (let i = 0; i < num; i++) {
+//   let str = "";
+//   let nextAlp = alp - i;
+//   for (let j = 0; j <= i; j++) {
+//     str += String.fromCharCode(nextAlp) + " ";
+//     nextAlp++;
+//   }
+//   console.log(str);
+// }
+// op
+// enter num: 4
+// D
+// C D
+// B C D
+// A B C D
+// ---------------------
+// star pattern for right side to left increasing
+// var n = prompt("n: ");
+// for (let i = n - 1; i >= 0; i--) {
+//   console.log(" ".repeat(i) + "*".repeat(n - i));
+// }
+// op
+// n: 4
+//    *
+//   **
+//  ***
+// ****
+// ---------------------
+// star pattern for right side to left increasing in opp dir
+// var n = prompt("n: ");
+// for (let i = n; i > 0; i--) {
+//   console.log("*".repeat(i) + " ".repeat(n - i));
+// }
+// op/
+// n: 4
+// ****
+// ***
+// **
+// *
+// ---------------------
+// star pattern for right side to left increasing in other direction in -
+// var n = prompt("n: ");
+// for (let i = n; i > 0; i--) {
+//   console.log("-".repeat(n - i) + "*".repeat(i));
+// }
+// op/
+// ****
+// -***
+// --**
+// ---*
+// ---------------------
+// tri with number in row as number with n as
+// var n = prompt("n: ");
+// for (let i = 0; i < n; i++) {
+//   console.log(" ".repeat(i) + (i + 1).toString().repeat(n - i));
+// }
+// o/p
+// n: 4
+// 1111
+//  222
+//   33
+//    4
+// ---------------------
+// pattern 3
+// var n = prompt("n: ");
+// for (let i = 0; i < n; i++) {
+//   console.log(" ".repeat(n - i) + (i + 1).toString().repeat(i + 1));
+// }
+// o/p
+// n: 4
+//     1
+//    22
+//   333
+//  4444
+// ---------------------
+// pattern 4 numb in increase order for each row
+// var n = prompt("n: ");
+// let p = 1;
+// for (let i = 0; i < n; i++) {
+//   let str = "";
+//   let p1 = p;
+//   for (let j = 0; j < n; j++) {
+//     if (j >= i) {
+//       str += p1;
+//       p1++;
+//     } else {
+//       str += " ";
+//     }
+//   }
+//   console.log(str);
+//   p++;
+// }
+// o/p
+// n: 4
+// 1234
+//  234
+//   34
+//    4
+// ---------------------
