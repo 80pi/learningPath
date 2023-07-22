@@ -410,3 +410,62 @@ const prompt = require("prompt-sync")();
 //   34
 //    4
 // ---------------------
+// pattern of 123 in triange
+// var n = prompt("n: ");
+// for (let i = n - 1; i >= 0; i--) {
+//   let p = 1;
+//   let str = "";
+//   for (let j = 0; j < n; j++) {
+//     if (j >= i) {
+//       str += p;
+//       p++;
+//     } else {
+//       str += " ";
+//     }
+//   }
+//   if (i <= n - 2) {
+//     let s = n - i - 1;
+//     for (let k = 0; k < n; k++) {
+//       if (k >= i + 1) {
+//         str += s;
+//         s--;
+//       }
+//     }
+//   }
+//   console.log(str);
+// }
+// n: 4
+//    1
+//   121
+//  12321
+// 1234321
+// ---------------------
+// pattern with a box club of num and stars
+// let turn = 0;
+// var n = prompt("n: ");
+// for (let i = n - 1; i >= 0; i--) {
+//   let str = "";
+//   // 1st right andlge tri
+//   for (let j = 1; j <= i + 1; j++) {
+//     str += j;
+//   }
+//   // middle stars pattern
+//   if (i <= n - 2) {
+//     turn = turn + 2;
+//     for (let j = 0; j < turn; j++) {
+//       str += "*";
+//     }
+//   }
+//   // last tri
+//   for (let k = i + 1; k > 0; k--) {
+//     str += k;
+//   }
+//   console.log(str);
+// }
+// n: 5
+// 1234554321
+// 1234**4321
+// 123****321
+// 12******21
+// 1********1
+// ---------------------

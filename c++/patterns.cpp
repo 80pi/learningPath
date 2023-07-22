@@ -465,5 +465,80 @@ int main()
 //  234
 //   34
 //    4
+// --------------------------------------------
+// pattern of 123 in triange
+// int n;
+// cin>>n;
+// for (int i = n-1; i>=0; i--)
+// {
+//     int p=1;
+//     for (int j = 0; j < n; j++)
+//     {
+//        if(j>=i){
+//         cout<<p;
+//         p++;
+//        }else{
+//         cout<<" ";
+//        }
+//     }
+//     if(i<=n-2){
+//         int s=n-i-1;
+//     for(int k=0;k<n;k++){
+//         if(k>=i+1){
+//         cout<<s;
+//         s--;
+//        }
+//     }
+//     }
+//     cout<<"\n";
+    
+// }
+// op
+// 4
+//    1
+//   121
+//  12321
+// 1234321
+// ---------------------------------
+// pattern with a box club of num and stars
+// int n,turn=0;
+// cin>>n;
+// for(int i=n-1;i>=0;i--){
+//     // 1st right andlge tri
+//     for(int j=1;j<=i+1;j++){
+//         cout<<j;
+//     }
+//     // middle stars pattern
+//     if(i<=n-2){
+//     turn=turn+2;
+//     for(int j=0;j<turn;j++){
+//         cout<<"*";
+//     }
+//     }
+//     // last tri
+//     for(int k=i+1;k>0;k--){
+//         cout<<k;
+//     }
+//     cout<<"\n";
 
+// }
+// op/
+// 6
+// 123456654321
+// 12345**54321
+// 1234****4321
+// 123******321
+// 12********21
+// 1**********1
+// ---------------------
+// cout<<(17>>1)<<endl; 
+// cout<<(17>>2)<<endl;
+// cout<<(17>>3)<<endl;
+int a=1,b=2;
+if( a-- > 0 && ++b > 2){
+    cout<<"inside";
+}else{
+    cout<<"ot";
+}
+cout<< a<<" "<<b;
 }
