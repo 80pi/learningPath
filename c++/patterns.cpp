@@ -534,11 +534,204 @@ int main()
 // cout<<(17>>1)<<endl; 
 // cout<<(17>>2)<<endl;
 // cout<<(17>>3)<<endl;
-int a=1,b=2;
-if( a-- > 0 && ++b > 2){
-    cout<<"inside";
-}else{
-    cout<<"ot";
-}
-cout<< a<<" "<<b;
-}
+// int a=1,b=2;
+// if( a-- > 0 && ++b > 2){
+//    cout<<"inside";
+// }else{
+//    cout<<"ot";
+// }
+// cout<< a<<" "<<b;
+// }
+//----------------------------
+// // simple calcuator
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int a=0,b=0,op=0;
+//     char c;
+//     cin >>a;
+//     cin >> b;
+//     cin >> c;
+//     switch(c){
+//         case '+':
+//         cout<<"adding"<<endl;
+//         op=a+b;
+//         break;
+//         case '-':
+//         op=a-b;
+//         break;
+//         case '/':
+//         op=a/b;
+//         break;
+//         case '%':
+//         op=a%b;
+//         break;
+//         case '*':
+//         op=a*b;
+//         break;
+//         default: cout<<"other option"<<endl;
+//         break;
+//     }
+//     cout<<"ur output: "<<op<<endl;
+//     return 0;
+// }
+// ---------------------------
+
+// // denotes number of NOTES required for a given number
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     // 2000,500,100,50,20,10
+//     cout<<"enter n value";
+//     cin>>n;
+//     while(n>=10){
+//         int op;
+//         if(n>=2000){
+//             op=n/2000;
+//             cout<<"reg "<<op<<" 2000 note"<<endl;
+//             n-=(2000*op);
+//         }
+//         else if(n<2000&n>=500){
+//             op=n/500;
+//             cout<<"reg "<<op<<" 500 note"<<endl;
+//             n-=(500*op);
+//         }
+//         else if(n<500&n>=100){
+//             op=n/100;
+//             cout<<"reg "<<op<<" 100 note"<<endl;
+//             n-=(100*op);
+//         }
+//         else if(n<100&n>=50){
+//             op=n/50;
+//             cout<<"reg "<<op<<" 50 note"<<endl;
+//             n-=(50*op);
+//         }
+//         else if(n<50&n>=20){
+//             op=n/20;
+//             cout<<"reg "<<op<<" 20 note"<<endl;
+//             n-=(20*op);
+            
+//         }
+//         else if(n<20&n>=10){
+//             op=n/10;
+//             cout<<"reg "<<op<<" 10 note"<<endl;
+//             n-=(10*op);
+//         }
+//         else{
+//             cout<<"less than 0"<<endl;
+//         }
+            
+//     }
+//     return 0;
+// }
+// ----------------------
+// // ncr code
+// #include <iostream>
+// using namespace std;
+// int fac(int n){
+//     int facAns=1;
+//     for(int i=n;i>0;i--){
+//         facAns*=i;
+//     }
+//     return facAns;
+// }
+// int main()
+// {
+//     int n,c;
+//     cin>>n>>c;
+//     int a=fac(n);
+//     int b=fac(c)*fac(n-c);
+//     int mul=a/b;
+//     cout<<mul;
+//     return 0;
+// }
+// ------------------------
+// // is prime or not
+// #include <iostream>
+
+// using namespace std;
+// int prime(int n){
+//     int facAns=1;
+//     for(int i=2;i<n;i++){
+//         if(n%i==0){
+//             return 0;
+//         }
+//     }
+//     return 1;
+// }
+// int main()
+// {
+//     int n,c;
+//     cin>>n;
+//     int ans=prime(n);
+//     if(ans==0){
+//         cout<<"not prime";
+//     }
+//     else{
+//          cout<<"prime";
+//     }
+//     return 0;
+// }
+// --------------------
+// // arithmetic progression
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n,c;
+//     cin>>n;
+//     int ans=(3*n)+7;
+//     cout<<"AP is: "<<ans;
+//     return 0;
+// }
+// -------------------------
+// // number of set bits in and b
+// // no of ones in a & b
+// #include <iostream>
+// using namespace std;
+// int setBit(int a){
+//     int one=0;
+//     while(a>0){
+//         int s;
+//         s=a&1;
+//         if(s==1){
+//             one++;
+//         }
+//         a=a>>1;
+//     }
+//     return one;
+// }
+// int main()
+// {
+//     int a,b,one=0;
+//     cin>>a>>b;
+//     int aco=setBit(a);
+//     int bco=setBit(b);
+//     cout<<aco+bco;
+//     return 0;
+// }
+// -----------------------
+// // fibanoci find nth term
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n,a=0,b=1,nthFibnoci=0;
+//     cin>>n;
+//     if(n==2){
+//         nthFibnoci=1;
+//     }else{
+//       for(int i=2;i<n;i++){
+//           nthFibnoci=a+b;
+//           a=b;
+//           b=nthFibnoci;
+//     }  
+//     }  
+//     cout << nthFibnoci;
+//     return 0;
+// }
+// ---------------------
+
