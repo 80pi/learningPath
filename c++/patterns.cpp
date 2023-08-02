@@ -734,4 +734,104 @@ int main()
 //     return 0;
 // }
 // ---------------------
+// video 09 arrays some problems
+// finding min and max
+// #include <iostream>
+// #include <climits>
+// using namespace std;
+// int main()
+// {
+//     int n,min=INT_MAX,max=INT_MIN;
+//     cin>>n;
+//     int a[n];
+//     for(int i=0;i<n;i++){
+//         cin>>a[i];
+//     }
+//     for(int i=0;i<n;i++){
+//         // max number
+//         if(a[i]>max){
+//             max=a[i];
+//         }
+//         if(a[i]<min){
+//             min=a[i];
+//         }
+//     }
+//     cout<<"max num "<<max<<endl;
+//     cout<<"min num "<<min<<endl;
+//     return 0;
+// }
+// -------------------------------------------
+// sum of element
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n,sum=0;
+//     cin>>n;
+//     int a[n];
+//     for(int i=0;i<n;i++){
+//         cin>>a[i];
+//         sum+=a[i];
+//     }
+//     cout<<"sum is "<<sum<<endl;
+//     return 0;
+// }
+// -------------------------------------------
+// reverse of a array
+//  method:01
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     int a[n];
+//     for(int i=0;i<n;i++){
+//         cin>>a[i];
+//     }
+//     // reverse the array
+//     int start=0;
+//     // int len=(sizeof(a)/sizeof(a[0])); // this will tells us the length
+//     // or below both works for the same finding length of the array
+//     int len = *(&a + 1) - a;
+//     int arrLimit=len/2;
+//     int end=len-1; // for getting the last variable position
+//     for(int i=0;i<arrLimit;i++){
+//         int temp=a[start];
+//         a[start]=a[end];
+//         a[end]=temp;
+//         start++;
+//         end--;
+//     }
+//     for(int i=0;i<n;i++){
+//         cout<<a[i]<<" ";
+//     }
+//     return 0;
+// }
+// method 02
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     int a[n];
+//     for(int i=0;i<n;i++){
+//         cin>>a[i];
+//     }
+//     // reverse the array
+//     int start=0;
+//     // int len=(sizeof(a)/sizeof(a[0])); // this will tells us the length
+//     // or below both works for the same
+//     int len = *(&a + 1) - a;
+//     int b[len];
+//     for(int i=0,j=len-1;i<len&j>=0;i++,j--){
+//         b[i]=a[j];
+//     }
+//     for(int i=0;i<n;i++){
+//         cout<<b[i]<<" ";
+//     }
+//     return 0;
+// }
+// ------------------------------
 
