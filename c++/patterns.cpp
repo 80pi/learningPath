@@ -1,9 +1,63 @@
 #include <iostream>
 using namespace std;
 
+// function in cpp cdoe help practise
+// areaof circle
+float calculateAreaOfCirecle(float radius)
+{
+    float pi = 3.14;
+    float area = pi * radius * radius;
+    return area;
+}
+bool methodOneEvenOrOdd(int n)
+{
+    if (n % 2 == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+bool methodTwoEvenOrOddBitwise(int n)
+{
+    if ((n & 1) == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+int factorial(int n)
+{
+    int fact = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        fact *= i;
+    }
+    return fact;
+}
+bool primeOrNot(int n)
+{
+    for (int i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+float contKiloToMile(float n)
+{
+    return n * 0.621371;
+}
+
 int main()
 {
-
     // prime code
     // int n,i=2,prime=0;
     // cin >> n;
@@ -18,7 +72,6 @@ int main()
     // if(prime==0){
     // cout<<"given num is prime";
     // }
-
     // -------------------------------------
     // star pattern of stars in which it a nxn matrix
     // int n,i=0;
@@ -32,7 +85,6 @@ int main()
     //     cout<<"\n";
     //     i++;
     // }
-
     // output
     // *****
     // *****
@@ -41,7 +93,6 @@ int main()
     // *****
     //
     // ------------------------------------
-
     // pattern-2 111\n222\n333 based on n numbers
     // int n,i=1;
     // cin>>n;
@@ -54,7 +105,7 @@ int main()
     //     i++;
     //     cout << "\n";
     // }
-    //    output
+    // ----   output
     // 8
     // 11111111
     // 22222222
@@ -75,14 +126,12 @@ int main()
     //     }
     //     cout << "\n";
     // }
-
     // output
     // 1 2 3 4 5
     // 1 2 3 4 5
     // 1 2 3 4 5
     // 1 2 3 4 5
     // 1 2 3 4 5
-
     // ?--------------------------
     // print nxn matrix with continuos number
     // int n,p=1;
@@ -162,7 +211,6 @@ int main()
     //     }
     //     cout<<"\n";
     // }
-
     // method 02 with out temp variable
     // int n;
     // cin>>n;
@@ -196,7 +244,6 @@ int main()
     // 3 2 1
     // 4 3 2 1
     // 5 4 3 2 1
-
     // --------------------------
     // print alpha with nxn in which column need to increase
     // int n,alp=65;
@@ -386,7 +433,6 @@ int main()
     //             cout<<"-";
     //         }else{
     //             cout<<"*";
-
     //         }
     //     }
     //     cout<<"\n";
@@ -407,7 +453,6 @@ int main()
     //             cout<<p;
     //         }else{
     //             cout<<" ";
-
     //         }
     //     }
     //     p++;
@@ -429,7 +474,6 @@ int main()
     //             cout<<p;
     //         }else{
     //             cout<<" ";
-
     //         }
     //     }
     //     p++;
@@ -527,9 +571,8 @@ int main()
     //         cout<<k;
     //     }
     //     cout<<"\n";
-
     // }
-    // op/
+    // ---op/-----------
     // 6
     // 123456654321
     // 12345**54321
@@ -584,7 +627,6 @@ int main()
     //     return 0;
     // }
     // ---------------------------
-
     // // denotes number of NOTES required for a given number
     // #include <iostream>
     // using namespace std;
@@ -620,7 +662,6 @@ int main()
     //             op=n/20;
     //             cout<<"reg "<<op<<" 20 note"<<endl;
     //             n-=(20*op);
-
     //         }
     //         else if(n<20&n>=10){
     //             op=n/10;
@@ -630,7 +671,6 @@ int main()
     //         else{
     //             cout<<"less than 0"<<endl;
     //         }
-
     //     }
     //     return 0;
     // }
@@ -658,7 +698,6 @@ int main()
     // ------------------------
     // // is prime or not
     // #include <iostream>
-
     // using namespace std;
     // int prime(int n){
     //     int facAns=1;
@@ -841,7 +880,6 @@ int main()
     //     return 0;
     // }
     // ------------------------------
-
     // }
     // op/
     // 6
@@ -860,7 +898,6 @@ int main()
     // int n=0;
     //     cin>>n;
     //     for(int i=0;i<n;i++){
-
     //        for(int j=0;j<n;j++){
     //             if(i==0 || i==n-1||j==0||j==n-1){
     //             cout<<'x';
@@ -910,10 +947,8 @@ int main()
     //     int col=(2*n)-1;
     //     int mid=col/2;
     //     int lineStar=1;
-
     //     for(int i=0;i<n;i++){
     //         int star=lineStar;
-
     //         for(int j=0;j<col;j++){
     //             if(i+j>=mid&& star>0){
     //                 cout<<"x";
@@ -989,7 +1024,6 @@ int main()
     //     for(int j=n-i;j>0;j=j-1){
     //         cout<<"x ";
     //     }
-
     //     cout<<endl;
     // }
     // -------o/p-----------
@@ -1080,7 +1114,6 @@ int main()
     //             else
     //                 cout << "  ";
     //         }
-
     //         cout << endl;
     //     }
     //     ---------------------op------------
@@ -1128,7 +1161,6 @@ int main()
     //             else
     //                 cout << "  ";
     //         }
-
     //         cout << endl;
     //     }
     //     //////op----------
@@ -1269,7 +1301,6 @@ int main()
     //     cout << "1" << endl;
     //     for (int i = 0; i < n - 1; i++)
     //     {
-
     //         for (int k = 0; k <= i; k++)
     //         {
     //             if (k == 0)
@@ -1279,7 +1310,6 @@ int main()
     //             cout << "_";
     //         }
     //         cout << i + 2;
-
     //         cout << endl;
     //     }
     //     for (int i = 0; i <= n; i++)
@@ -1496,4 +1526,390 @@ int main()
     // // x x x     x x x
     // // x x         x x
     // // x             x
+    // ----------------------------
+    // Fancy 01
+    //     int n;
+    //     cin >> n;
+    //     int col = 17; // based on home work explination taken it as fix bzc 9 will make full triangle
+    //     int mid = col / 2;
+    //     int starCount = 1;
+    //     for (int i = 1; i <= n; i++)
+    //     {
+    //         for (int j = 0; j < col; j++)
+    //         {
+    //             if (j >= mid && starCount > 0)
+    //             {
+    //                 if (starCount % 2 == 0)
+    //                 {
+    //                     cout << "* ";
+    //                 }
+    //                 else
+    //                 {
+    //                     cout << i << " ";
+    //                 }
+    //                 starCount--;
+    //             }
+    //             else
+    //             {
+    //                 cout << "* ";
+    //             }
+    //         }
+    //         starCount = 2 * (i) + 1;
+    //         mid--;
+    //         cout << endl;
+    //     }
+    //     // --------op--------
+    //     9
+    // * * * * * * * * 1 * * * * * * * *
+    // * * * * * * * 2 * 2 * * * * * * *
+    // * * * * * * 3 * 3 * 3 * * * * * *
+    // * * * * * 4 * 4 * 4 * 4 * * * * *
+    // * * * * 5 * 5 * 5 * 5 * 5 * * * *
+    // * * * 6 * 6 * 6 * 6 * 6 * 6 * * *
+    // * * 7 * 7 * 7 * 7 * 7 * 7 * 7 * *
+    // * 8 * 8 * 8 * 8 * 8 * 8 * 8 * 8 *
+    // 9 * 9 * 9 * 9 * 9 * 9 * 9 * 9 * 9
+    // ----------------------------
+    // Fancy 02
+    // numerival hallow half pyramid
+    //     int n;
+    //     cin >> n;
+    //     for (int i = 0; i < n; i++)
+    //     {
+    //         for (int j = 0; j <= i; j++)
+    //         {
+    //             if (j == 0 || j == i || i == n - 1)
+    //             {
+    //                 cout << j + 1;
+    //             }
+    //             else
+    //             {
+    //                 cout << " ";
+    //             }
+    //         }
+    //         cout << endl;
+    //     }
+    //     // --op--
+    //     5
+    // 1
+    // 12
+    // 1 3
+    // 1  4
+    // 12345
+    // ----------------------------
+    // Fancy 02
+    //     int n;
+    //     cin >> n;
+    //     int val = 1;
+    //     for (int i = 0; i < n; i++)
+    //     {
+    //         for (int j = 0; j < (2 * (i + 1) - 1); j++)
+    //         {
+    //             if (j % 2 == 0)
+    //             {
+    //                 cout << val;
+    //                 val++;
+    //             }
+    //             else
+    //             {
+    //                 cout << "*";
+    //             }
+    //         }
+    //         cout << endl;
+    //     }
+    //     int start = val - n;
+    //     for (int i = n; i > 0; i--)
+    //     {
+    //         int k = start;
+    //         for (int j = 0; j < (2 * i - 1); j++)
+    //         {
+    //             if (j % 2 == 0)
+    //             {
+    //                 cout << k;
+    //                 k++;
+    //             }
+    //             else
+    //             {
+    //                 cout << "*";
+    //             }
+    //         }
+    //         start = start - i + 1;
+    //         cout << endl;
+    //     }
+    //     // -----op------
+    //     4
+    // 1
+    // 2*3
+    // 4*5*6
+    // 7*8*9*10
+    // 7*8*9*10
+    // 4*5*6
+    // 2*3
+    // 1
+    // ---------------
+    // fancy 3
+    // int num;
+    // cin >> num;
+    // int upper = num % 2 == 0 ? num / 2 : num / 2 + 1;
+    // int lower = num - upper;
+    // for (int i = 0; i < upper; i++)
+    // {
+    //     int val = 1;
+    //     int colMid = ((2 * i - 1) / 2) + 1;
+    //     for (int j = 0; j < (2 * (i + 1) - 1); j++)
+    //     {
+    //         if (j == 0 || j == (2 * (i + 1) - 2))
+    //         {
+    //             cout << "*";
+    //         }
+    //         else if (j <= colMid)
+    //         {
+    //             if (j == colMid)
+    //             {
+    //                 cout << val;
+    //             }
+    //             else
+    //             {
+    //                 cout << val;
+    //                 val++;
+    //             }
+    //         }
+    //         else if (j > colMid)
+    //         {
+    //             --val;
+    //             cout << val;
+    //         }
+    //     }
+    //     cout << endl;
     // }
+    // for (int i = lower; i > 0; i--)
+    // {
+    //     int val = 1;
+    //     int lowercolMid = ((2 * i - 1) / 2) + 1;
+    //     for (int j = (2 * (i)-1); j > 0; j--)
+    //     {
+    //         if (j == 1 || j == (2 * (i)-1))
+    //         {
+    //             cout << "*";
+    //         }
+    //         else if (j >= lowercolMid)
+    //         {
+    //             if (j == lowercolMid)
+    //             {
+    //                 cout << val;
+    //             }
+    //             else
+    //             {
+    //                 cout << val;
+    //                 val++;
+    //             }
+    //         }
+    //         else if (j < lowercolMid)
+    //         {
+    //             --val;
+    //             cout << val;
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    //
+    //     //----------op-------
+    //     9
+    // *
+    // *1*
+    // *121*
+    // *12321*
+    // *1234321*
+    // *12321*
+    // *121*
+    // *1*
+    // *
+    // ------------------------
+    // pascals' triangel
+    //     int n;
+    //     cin >> n;
+    //     for (int i = 1; i <= n; i++)
+    //     {
+    //         int c = 1;
+    //         for (int j = 1; j <= i; j++)
+    //         {
+    //             cout << c;
+    //             c = c * (i - j) / j; // formulae for the pascal triangle to get that row calues
+    //         }
+    //         cout << endl;
+    //     }
+    //     // --------op------
+    //     7
+    // 1
+    // 11
+    // 121
+    // 1331
+    // 14641
+    // 15101051
+    // 1615201561
+    // -------------------------
+    // facy 4
+    // growth and shrink face of side number triangle
+    // int num;
+    // cin >> num;
+    // for (int i = 0; i < num; i++)
+    // {
+    //     int cdt = i <= num / 2 ? 2 * i : 2 * (num - i - 1);
+    //     for (int j = 0; j <= cdt; j++)
+    //     {
+    //         if (j <= cdt / 2)
+    //         {
+    //             cout << j + 1;
+    //         }
+    //         else
+    //         {
+    //             cout << cdt - j + 1;
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // op------------
+    //     7
+    // 1
+    // 121
+    // 12321
+    // 1234321
+    // 12321
+    // 121
+    // 1
+    //----------
+    // area of circle
+    // int n;
+    // cin >> n;
+    // float val = calculateAreaOfCirecle(n);
+    // cout << val;
+    // ---------
+    // even or odd
+    // method one normal
+    // int n;
+    // cin >> n;
+    // bool res = methodOneEvenOrOdd(n);
+    // if (res)
+    // {
+    //     cout << n << " is even";
+    // }
+    // else
+    // {
+    //     cout << n << " is odd";
+    // }
+    // -----------------
+    // even odd method 02 bit wise
+    // int n;
+    // cin >> n;
+    // bool res = methodTwoEvenOrOddBitwise(n);
+    // if (res)
+    // {
+    //     cout << n << " is even";
+    // }
+    // else
+    // {
+    //     cout << n << " is odd";
+    // }
+    // ------------------------
+    // int n;
+    // cin >> n;
+    // factorial of a given number
+    // int res = factorial(n);
+    // cout << "factorial of " << n << " " << res;
+    // --------------------
+    // check given number
+    // int n;
+    // cin >> n;
+    // bool prime = primeOrNot(n);
+    // if (prime)
+    // {
+    //     cout << n << " is prime";
+    // }
+    // else
+    // {
+    //     cout << n << " is not a prime";
+    // }
+    // ------------------
+    // find prime in given range
+    // int n;
+    // cin >> n;
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     bool prime = primeOrNot(i);
+    //     if (prime)
+    //     {
+    //         cout << i << " is prime" << endl;
+    //     }
+    //     else
+    //     {
+    //         cout << i << " is not a prime" << endl;
+    //     }
+    // }
+    // -------------------------
+    // set kth bit (to set the particular index of given decimal n of it's binary place
+    // to convert 0 to 1 at print it decimal value)
+    // int n;
+    // cin >> n;
+    // int kthBit, val = 1;
+    // cin >> kthBit;
+    // val = val << kthBit;
+    // cout << "kth bit of given number be " << (n | val);
+    // ------------
+    // count all set bits (means to count no of one's in a given binary of decimal n)
+    // int n;
+    // cin >> n;
+    // int setBitCount = 0;
+    // int t = n;
+    // while (t > 0)
+    // {
+    //     if ((t & 1) != 0)
+    //         setBitCount++;
+    //     t = t >> 1;
+    // }
+    // cout << "set bit count of " << n << " is " << setBitCount;
+    // ----op----
+    //     34 (100010 34 binary value and no of one's are 2 so answer is 2)
+    // set bit count of 34 is 2
+    // ---------------
+    // create number using digits
+    // int n;
+    // cin >> n;
+    // int digit = 0, newDigit;
+    // for (int i = 0; i < n; i++)
+    // { // here n means no of digits he wants to put in
+    //     cin >> newDigit;
+    //     digit = digit * 10 + newDigit;
+    // }
+    // cout << "complete digit after all values be " << digit;
+    // ---op---
+    //     3
+    // 1
+    // 2
+    // 3
+    // complete digit after all values be 123
+    // ---------------
+    // print no of digits in integer(to print indiviual digits in give input)
+    // int n;
+    // cin >> n;
+    // while (n > 0)
+    // {
+    //     int rem = n % 10;
+    //     cout << rem << endl;
+    //     n /= 10;
+    // }
+    // ---op------
+    //     1234
+    // 4
+    // 3
+    // 2
+    // 1
+    // -----------------
+    // kilometers to miles (1kilometer=0.6213371miles)
+    // float n;
+    // cin >> n;
+    // float res = contKiloToMile(n);
+    // cout << "converted values for " << n << " km to miles be " << res << " miles";
+    // -----------op--------
+    //     67.89 (given in km)
+    // converted values for 67.89 km to miles be 42.1849 miles (ans in miles)
+}
